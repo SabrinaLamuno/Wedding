@@ -3444,6 +3444,12 @@ figcaption {
     font-family: 'Kaushan Script', cursive;
 }
 
+@media screen and (max-width: 767px) {
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
 .layer-background {
     position: absolute;
     left: 0%;
