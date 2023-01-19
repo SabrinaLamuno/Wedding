@@ -3333,6 +3333,7 @@ figcaption {
 
 #extra-info {
     text-align: center;
+    color: #fff;
 }
 
 .progress-bar {
@@ -3486,7 +3487,9 @@ figcaption {
     z-index: 2;
     background-color: #ced3dc;
 }
-
+.layer-background.is--5 {
+    z-index: 2;
+}
 .layers-component {
     position: absolute;
     left: 0%;
