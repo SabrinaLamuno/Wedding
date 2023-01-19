@@ -170,7 +170,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 $(venueSelector).fadeOut(2200, function () {
-                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion');
+                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic para abrir el mapa!)');
                     $(venueSelector).css('font-size', '2.5em');
                     $(venueSelector).stop().fadeIn(1000);
                 });
@@ -196,7 +196,7 @@
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(giftGivingSelector).fadeOut(2200, function () {
-                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal: CUENTA o el dia de la boda.');
+                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
                 });
@@ -227,8 +227,8 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 $(venueSelector).fadeOut(2200, function () {
-                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion');
-                    $(venueSelector).css('font-size', '2.5em');
+                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic para abrir el mapa!)');
+                    $(venueSelector).css('font-size', '2em');
                     $(venueSelector).stop().fadeIn(1000);
                 });
             }
@@ -253,11 +253,17 @@
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(giftGivingSelector).fadeOut(2200, function () {
-                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal: CUENTA o el dia de la boda.');
+                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
                 });
             }
+        });
+        $('#section3').click(function () {
+            window.open('https://www.paypal.com/paypalme/demianysabrina', '_blank');
+        })
+        $('#section1').click(function () {
+            window.open('https://goo.gl/maps/WywjYmdzPt6heM7r8', '_blank');
         })
     </script>
 </body>
