@@ -3328,6 +3328,11 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#extra-info {
+    text-align: center;
 }
 
 .progress-bar {
@@ -3441,7 +3446,7 @@ figcaption {
 }
 
 .body {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 767px) {

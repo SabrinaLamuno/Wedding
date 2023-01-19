@@ -93,6 +93,7 @@
                         <div class="subheader text-weight-light">or use up / down arrows</div>
                     </div>
                     <div id="w-node-_21ae84cb-2cfe-178d-bd4b-0411ba591fb0-46e5280d" class="progress-bar_wrapper">
+                        <h3 id="extra-info"></h3>
                         <div class="progress-bar"></div>
                     </div>
                 </div>
@@ -137,6 +138,7 @@
         var venueSelector = '#venue';
         var ceremonySelector = '#ceremony';
         var giftGivingSelector = '#gift-giving';
+        var extraInfoSelector = '#extra-info';
 
         var dateText = 'Date';
         var venueText = 'Venue';
@@ -147,6 +149,7 @@
             activeSlide = activeSlide.replace('#', '');
             console.log(activeSlide)
             if (activeSlide == 'one' || activeSlide == '') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -156,12 +159,13 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 $(dateSelector).fadeOut(5000, function () {                    
-                    $(dateSelector).text('Date: 11.02.2023');
+                    $(dateSelector).text('11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(dateSelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'two') {
+                $(extraInfoSelector).text('');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -169,12 +173,13 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 $(venueSelector).fadeOut(2200, function () {
-                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic para abrir el mapa!)');
+                    $(venueSelector).text('Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic aqui para abrir el mapa!)');
                     $(venueSelector).css('font-size', '2.5em');
                     $(venueSelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'three') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
@@ -182,12 +187,15 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 $(ceremonySelector).fadeOut(2200, function () {
-                    $(ceremonySelector).text('Ceremony: Empezamos a las 6:30pm! El codigo de vestimenta es formal / come as you are');
+                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es formal / come as you are');
                     $(ceremonySelector).css('font-size', '2.7em');
+                    $(extraInfoSelector).text('Cualquier duda puedes hablarle a nuestra maid of honor: +502 4683 5882');
+                    $(extraInfoSelector).css('font-size', '2vh')
                     $(ceremonySelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'four') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -195,7 +203,7 @@
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(giftGivingSelector).fadeOut(2200, function () {
-                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
+                    $(giftGivingSelector).text('Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
                 });
@@ -206,6 +214,7 @@
             activeSlide = activeSlide.replace('#', '');
             console.log(activeSlide)
             if (activeSlide == 'one') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -215,12 +224,13 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 $(dateSelector).fadeOut(5000, function () {                    
-                    $(dateSelector).text('Date: 11.02.2023');
+                    $(dateSelector).text('11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(dateSelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'two') {
+                $(extraInfoSelector).text('');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -228,25 +238,31 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 $(venueSelector).fadeOut(2200, function () {
-                    $(venueSelector).text('Venue: Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic para abrir el mapa!)');
+                    $(venueSelector).text('Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic aqui para abrir el mapa!)');
                     $(venueSelector).css('font-size', '2em');
                     $(venueSelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'three') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
-                $(ceremonySelector).fadeOut(2200, function () {
-                    $(ceremonySelector).text('Ceremony: Empezamos a las 6:30pm! El codigo de vestimenta es formal / come as you are');
+                $(ceremonySelector).text('Double the ceremony, double the fun!');
+                $(ceremonySelector).css('font-size', '4em');
+                $(ceremonySelector).fadeOut(5000, function () {
+                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es formal / come as you are');
+                    $(extraInfoSelector).text('Cualquier duda puedes hablarle a nuestra maid of honor: +502 4683 5882');
+                    $(extraInfoSelector).css('font-size', '2vh')
                     $(ceremonySelector).css('font-size', '2.7em');
                     $(ceremonySelector).stop().fadeIn(1000);
                 });
             }
             if (activeSlide == 'four') {
+                $(extraInfoSelector).text('');
                 $(venueSelector).text(venueText);
                 $(venueSelector).css('font-size', '8em');
                 $(ceremonySelector).text(ceremonyText);
@@ -254,7 +270,7 @@
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
                 $(giftGivingSelector).fadeOut(2200, function () {
-                    $(giftGivingSelector).text('Gift Giving: Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
+                    $(giftGivingSelector).text('Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
                 });
