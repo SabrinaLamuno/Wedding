@@ -47,9 +47,6 @@
 </head>
 
 <body class="body">
-    <div class="mobile-block">
-        <div class="mobile-block_text">we need a bigger screen here</div>
-    </div>
     <div class="page-wrapper">
         <div class="global-styles w-embed"></div>
         <div class="navbar_component">
@@ -156,8 +153,10 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
-                $(dateSelector).fadeOut(2200, function () {
-                    $(dateSelector).text('Date: Welcome to our house wedding! 11.02.2023');
+                $(dateSelector).text('Welcome to our house wedding!');
+                $(dateSelector).css('font-size', '4em');
+                $(dateSelector).fadeOut(5000, function () {                    
+                    $(dateSelector).text('Date: 11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(dateSelector).stop().fadeIn(1000);
                 });
@@ -213,8 +212,10 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
-                $(dateSelector).fadeOut(2200, function () {
-                    $(dateSelector).text('Date: Welcome to our house wedding! 11.02.2023');
+                $(dateSelector).text('Welcome to our house wedding!');
+                $(dateSelector).css('font-size', '4em');
+                $(dateSelector).fadeOut(5000, function () {                    
+                    $(dateSelector).text('Date: 11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(dateSelector).stop().fadeIn(1000);
                 });

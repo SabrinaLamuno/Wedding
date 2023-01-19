@@ -2222,6 +2222,12 @@ body {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.75vh;
+    }
+}
+
 h1 {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -2461,7 +2467,7 @@ figcaption {
 .text-size-large {
     position: relative;
     color: #fff;
-    font-size: 8em;
+    font-size: 8vh;
     text-align: center;
 }
 
@@ -3268,6 +3274,11 @@ figcaption {
     text-decoration: none;
     mix-blend-mode: exclusion;
 }
+@media screen and (max-width: 767px) {
+    .navbar_component {
+        display: none;
+    }
+}
 
 .subheader_wrapper {
     display: -webkit-box;
@@ -3334,6 +3345,12 @@ figcaption {
     line-height: 1;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    .subheader {
+        display: none;
+    }
 }
 
 .subheader.text-weight-light {
