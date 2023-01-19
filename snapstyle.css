@@ -3456,6 +3456,55 @@ figcaption {
     }
 }
 
+#slide-down {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #slide-down {
+        display: block;
+        color: #fff;
+    }
+}
+
+#slide-down {
+    animation: slide-down 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(10px);
+    }
+}
+
+@-moz-keyframes slide-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(10px);
+    }
+}
+
 .layer-background {
     position: absolute;
     left: 0%;
