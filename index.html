@@ -158,19 +158,39 @@
                         $(ceremonySelector).css('font-size', '8em');
                         $(dateSelector).text(dateText);
                         $(dateSelector).css('font-size', '8em');
-                        $(giftGivingSelector).fadeOut(2200, function () {
+                        $(giftGivingSelector).fadeOut(1500, function () {
                             $(giftGivingSelector).text('¡Los esperamos!');
                             $(giftGivingSelector).css('font-size', '6.38em');
                             $(giftGivingSelector).css('transform', 'translate3d(0px, -350%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
                             $(giftGivingSelector).stop().delay(1).fadeIn(1000);
                             proxy.show = false;
                         });
-                    }, 8000);
+                    }, 2000);
                 }
                 return Reflect.set(...arguments)
             }
         };
+
         const proxy = new Proxy(greetingObj, handler);
+
+        function disableScroll() {
+            $('body').css('overflow', 'hidden');
+            $('body').css('margin', '0');
+            $('body').css('height', '100%');
+            $('html').css('overflow', 'hidden');
+            $('html').css('margin', '0');
+            $('html').css('height', '100%');
+        }
+
+        function ennableScroll() {
+            $('body').css('overflow', 'auto');
+            $('body').css('margin', '0');
+            $('body').css('height', 'auto');
+            $('html').css('overflow', 'auto');
+            $('html').css('margin', '0');
+            $('html').css('height', 'auto');
+        }
+
         $(document).ready(function () {
             var activeSlide = window.location.hash;
             activeSlide = activeSlide.replace('#', '');
@@ -186,7 +206,7 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 proxy.show = false;
-                $(dateSelector).fadeOut(5000, function () {
+                $(dateSelector).fadeOut(1500, function () {
                     $(dateSelector).text('11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(extraInfoSelector).text('Les recordamos que esta es una unplugged wedding. Queremos vivir el momento con ustedes y no con nuestros celulares. Pero no se preocupen, ¡habran fotografos para capturar los mejores momentos y compartirlos con ustedes! Gracias por su comprension.');
@@ -203,7 +223,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(venueSelector).fadeOut(2200, function () {
+                $(venueSelector).fadeOut(1500, function () {
                     $(venueSelector).text('Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic aqui para abrir el mapa!)');
                     $(venueSelector).css('font-size', '2.5em');
                     $(venueSelector).stop().fadeIn(1000);
@@ -218,8 +238,8 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(ceremonySelector).fadeOut(2200, function () {
-                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es coktail formal / come as you are');
+                $(ceremonySelector).fadeOut(1500, function () {
+                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es cocktail formal / come as you are');
                     $(ceremonySelector).css('font-size', '2.7em');
                     $(extraInfoSelector).text('Cualquier duda puedes hablarle a nuestra maid of honor Ariana Lamuño: +502 4683 5882');
                     $(extraInfoSelector).css('font-size', '2vh')
@@ -234,7 +254,7 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
-                $(giftGivingSelector).fadeOut(2200, function () {
+                $(giftGivingSelector).fadeOut(1500, function () {
                     $(giftGivingSelector).text('Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
@@ -257,7 +277,7 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 proxy.show = false;
-                $(dateSelector).fadeOut(5000, function () {
+                $(dateSelector).fadeOut(3000, function () {
                     $(dateSelector).text('11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(extraInfoSelector).text('Les recordamos que esta es una unplugged wedding. Queremos vivir el momento con ustedes y no con nuestros celulares. Pero no se preocupen, ¡habran fotografos para capturar los mejores momentos y compartirlos con ustedes! Gracias por su comprension.');
@@ -274,7 +294,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(venueSelector).fadeOut(2200, function () {
+                $(venueSelector).fadeOut(1500, function () {
                     $(venueSelector).text('Casa Kuxtal, RN-14, Km. 91.5 Alotenango, Antigua Guatemala, La Reunion (haz clic aqui para abrir el mapa!)');
                     $(venueSelector).css('font-size', '2em');
                     $(venueSelector).stop().fadeIn(1000);
@@ -291,8 +311,8 @@
                 $(ceremonySelector).text('Double the ceremony, double the fun!');
                 $(ceremonySelector).css('font-size', '4em');
                 proxy.show = false;
-                $(ceremonySelector).fadeOut(5000, function () {
-                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es coktail formal / come as you are');
+                $(ceremonySelector).fadeOut(1500, function () {
+                    $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es cocktail formal / come as you are');
                     $(extraInfoSelector).text('Cualquier duda puedes hablarle a nuestra maid of honor Ariana Lamuño: +502 4683 5882');
                     $(extraInfoSelector).css('font-size', '2vh')
                     $(ceremonySelector).css('font-size', '2.7em');
@@ -307,7 +327,7 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
-                $(giftGivingSelector).fadeOut(2200, function () {
+                $(giftGivingSelector).fadeOut(1500, function () {
                     $(giftGivingSelector).text('Ya que vivimos en el extranjero, si quieres regalarnos algo, puedes hacerlo a traves de nuestra cuenta de paypal (haz clic aqui!) o el dia de la boda.');
                     $(giftGivingSelector).css('font-size', '2em');
                     $(giftGivingSelector).stop().fadeIn(1000);
