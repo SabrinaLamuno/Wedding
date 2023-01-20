@@ -158,7 +158,7 @@
                         $(ceremonySelector).css('font-size', '8em');
                         $(dateSelector).text(dateText);
                         $(dateSelector).css('font-size', '8em');
-                        $(giftGivingSelector).fadeOut(1500, function () {
+                        $(giftGivingSelector).fadeOut(3000, function () {
                             $(giftGivingSelector).text('¡Los esperamos!');
                             $(giftGivingSelector).css('font-size', '6.38em');
                             $(giftGivingSelector).css('transform', 'translate3d(0px, -350%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)');
@@ -172,24 +172,6 @@
         };
 
         const proxy = new Proxy(greetingObj, handler);
-
-        function disableScroll() {
-            $('body').css('overflow', 'hidden');
-            $('body').css('margin', '0');
-            $('body').css('height', '100%');
-            $('html').css('overflow', 'hidden');
-            $('html').css('margin', '0');
-            $('html').css('height', '100%');
-        }
-
-        function ennableScroll() {
-            $('body').css('overflow', 'auto');
-            $('body').css('margin', '0');
-            $('body').css('height', 'auto');
-            $('html').css('overflow', 'auto');
-            $('html').css('margin', '0');
-            $('html').css('height', 'auto');
-        }
 
         $(document).ready(function () {
             $(extraInfoSelector).text('');
@@ -215,7 +197,7 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 proxy.show = false;
-                $(dateSelector).fadeOut(1500, function () {
+                $(dateSelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -228,7 +210,7 @@
                     $(dateSelector).text('11.02.2023');
                     $(dateSelector).css('font-size', '4em');
                     $(extraInfoSelector).text('Les recordamos que esta es una unplugged wedding. Queremos vivir el momento con ustedes y no con nuestros celulares. Pero no se preocupen, ¡habran fotografos para capturar los mejores momentos y compartirlos con ustedes! Gracias por su comprension.');
-                    $(extraInfoSelector).css('font-size', '2vh')
+                    $(extraInfoSelector).css('font-size', '2vh');
                     $(dateSelector).stop().fadeIn(1000);
                 });
             }
@@ -241,7 +223,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(venueSelector).fadeOut(1500, function () {
+                $(venueSelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -265,7 +247,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(ceremonySelector).fadeOut(1500, function () {
+                $(ceremonySelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -278,7 +260,7 @@
                     $(ceremonySelector).text('Empezamos a las 6:30pm! El codigo de vestimenta es cocktail formal / come as you are');
                     $(ceremonySelector).css('font-size', '2.7em');
                     $(extraInfoSelector).text('Cualquier duda puedes hablarle a nuestra maid of honor Ariana Lamuño: +502 4683 5882');
-                    $(extraInfoSelector).css('font-size', '2vh')
+                    $(extraInfoSelector).css('font-size', '2vh');
                     $(ceremonySelector).stop().fadeIn(1000);
                 });
             }
@@ -290,7 +272,7 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
-                $(giftGivingSelector).fadeOut(1500, function () {
+                $(giftGivingSelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -322,7 +304,7 @@
                 $(dateSelector).text('Welcome to our house wedding!');
                 $(dateSelector).css('font-size', '4em');
                 proxy.show = false;
-                $(dateSelector).fadeOut(3000, function () {
+                $(dateSelector).fadeOut(3500, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -348,7 +330,7 @@
                 $(giftGivingSelector).text(giftGivingText);
                 $(giftGivingSelector).css('font-size', '8em');
                 proxy.show = false;
-                $(venueSelector).fadeOut(1500, function () {
+                $(venueSelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -374,7 +356,7 @@
                 $(ceremonySelector).text('Double the ceremony, double the fun!');
                 $(ceremonySelector).css('font-size', '4em');
                 proxy.show = false;
-                $(ceremonySelector).fadeOut(1500, function () {
+                $(ceremonySelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
@@ -399,7 +381,7 @@
                 $(ceremonySelector).css('font-size', '8em');
                 $(dateSelector).text(dateText);
                 $(dateSelector).css('font-size', '8em');
-                $(giftGivingSelector).fadeOut(1500, function () {
+                $(giftGivingSelector).fadeOut(2200, function () {
                     $(extraInfoSelector).text('');
                     $(dateSelector).text(dateText);
                     $(dateSelector).css('font-size', '8em');
